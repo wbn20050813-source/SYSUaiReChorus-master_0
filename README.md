@@ -14,8 +14,7 @@ python run_rechorus.py --dataset meta_Grocery_and_Gourmet_Food --mode concat
 结构目录在下面 基本所有文件都在src目录下 就在src目录下运行就行
 
 
-
-
+本项目删除了ReChorus-master_0\ReChorus-master\data_preprocess中的部分相同数据，若影响运行可将processed中的文件复制一份一模一样的在同个目录下创建emd并将文件粘贴进去
 
 
 
