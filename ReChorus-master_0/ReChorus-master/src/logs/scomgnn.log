@@ -1,0 +1,322 @@
+2025-12-28 20:25:26,994 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:25:26,994 - INFO - Device: cuda:0
+2025-12-28 20:25:26,994 - INFO - Model mode: concat
+2025-12-28 20:25:26,995 - INFO - Loading data...
+2025-12-28 20:25:26,995 - INFO - Reading SComGNN data from "./data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:25:26,995 - ERROR - Error occurred: Dataset file not found: ./data_preprocess/processed/meta_Grocery_and_Gourmet_Food.npz
+Traceback (most recent call last):
+  File "run_rechorus.py", line 141, in main
+    corpus = SComGNNReader(args)
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNReader.py", line 35, in __init__
+    self._read_data()
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNReader.py", line 72, in _read_data
+    raise FileNotFoundError(f"Dataset file not found: {data_path}")
+FileNotFoundError: Dataset file not found: ./data_preprocess/processed/meta_Grocery_and_Gourmet_Food.npz
+2025-12-28 20:25:49,349 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:25:49,350 - INFO - Device: cuda:0
+2025-12-28 20:25:49,350 - INFO - Model mode: concat
+2025-12-28 20:25:49,350 - INFO - Loading data...
+2025-12-28 20:25:49,350 - INFO - Reading SComGNN data from "data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:25:49,350 - ERROR - Error occurred: Dataset file not found: data_preprocess/processed/meta_Grocery_and_Gourmet_Food.npz
+Traceback (most recent call last):
+  File "run_rechorus.py", line 141, in main
+    corpus = SComGNNReader(args)
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNReader.py", line 35, in __init__
+    self._read_data()
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNReader.py", line 72, in _read_data
+    raise FileNotFoundError(f"Dataset file not found: {data_path}")
+FileNotFoundError: Dataset file not found: data_preprocess/processed/meta_Grocery_and_Gourmet_Food.npz
+2025-12-28 20:26:22,283 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:26:22,283 - INFO - Device: cuda:0
+2025-12-28 20:26:22,283 - INFO - Model mode: concat
+2025-12-28 20:26:22,284 - INFO - Loading data...
+2025-12-28 20:26:22,284 - INFO - Reading SComGNN data from "data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:26:22,771 - INFO - "# user": 38548, "# item": 38548
+2025-12-28 20:26:23,047 - INFO - Loaded category embeddings from data_preprocess/processed/meta_Grocery_and_Gourmet_Food_embeddings.npz
+2025-12-28 20:26:23,050 - INFO - Building adjacency matrix...
+2025-12-28 20:26:23,155 - INFO - Adjacency matrix built: torch.Size([38548, 38548])
+2025-12-28 20:26:23,155 - INFO - Creating model...
+2025-12-28 20:26:23,391 - INFO - Creating datasets...
+2025-12-28 20:26:23,833 - INFO - Creating runner...
+2025-12-28 20:26:23,833 - INFO - Starting training...
+2025-12-28 20:26:41,427 - ERROR - Error occurred: module 'utils.utils' has no attribute 'batch_to_device'
+Traceback (most recent call last):
+  File "run_rechorus.py", line 166, in main
+    runner.train(data_dict)
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNRunner.py", line 87, in train
+    initial_test_result = self.evaluate(data_dict['test'],
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNRunner.py", line 68, in evaluate
+    batch = utils.batch_to_device(batch, self.args.device)
+AttributeError: module 'utils.utils' has no attribute 'batch_to_device'
+2025-12-28 20:27:42,502 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:27:42,502 - INFO - Device: cuda:0
+2025-12-28 20:27:42,503 - INFO - Model mode: concat
+2025-12-28 20:27:42,503 - INFO - Loading data...
+2025-12-28 20:27:42,503 - INFO - Reading SComGNN data from "./data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:27:42,984 - INFO - "# user": 38548, "# item": 38548
+2025-12-28 20:27:43,264 - INFO - Loaded category embeddings from ./data_preprocess/processed/meta_Grocery_and_Gourmet_Food_embeddings.npz
+2025-12-28 20:27:43,266 - INFO - Building adjacency matrix...
+2025-12-28 20:27:43,367 - INFO - Adjacency matrix built: torch.Size([38548, 38548])
+2025-12-28 20:27:43,367 - INFO - Creating model...
+2025-12-28 20:27:43,574 - INFO - Creating datasets...
+2025-12-28 20:27:44,007 - INFO - Creating runner...
+2025-12-28 20:27:44,008 - INFO - Starting training...
+2025-12-28 20:27:44,124 - INFO - Optimizer: Adam
+2025-12-28 20:27:51,280 - INFO - Early stop manually
+2025-12-28 20:27:53,600 - INFO - 
+--------------------------------------------- END: 2025-12-28 20:27:53 ---------------------------------------------
+2025-12-28 20:29:40,431 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:29:40,432 - INFO - Device: cuda:0
+2025-12-28 20:29:40,432 - INFO - Model mode: concat
+2025-12-28 20:29:40,432 - INFO - Loading data...
+2025-12-28 20:29:40,432 - INFO - Reading SComGNN data from "./data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:29:40,432 - ERROR - Error occurred: Dataset file not found: ./data_preprocess/processed/meta_Grocery_and_Gourmet_Food.npz
+Traceback (most recent call last):
+  File "run_rechorus.py", line 140, in main
+    corpus = SComGNNReader(args)
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNReader.py", line 35, in __init__
+    self._read_data()
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNReader.py", line 72, in _read_data
+    raise FileNotFoundError(f"Dataset file not found: {data_path}")
+FileNotFoundError: Dataset file not found: ./data_preprocess/processed/meta_Grocery_and_Gourmet_Food.npz
+2025-12-28 20:32:12,133 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:32:12,133 - INFO - Device: cuda:0
+2025-12-28 20:32:12,134 - INFO - Model mode: concat
+2025-12-28 20:32:12,134 - INFO - Loading data...
+2025-12-28 20:32:12,134 - INFO - Reading SComGNN data from "./data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:32:12,615 - INFO - "# user": 38548, "# item": 38548
+2025-12-28 20:32:12,881 - INFO - Loaded category embeddings from ./data_preprocess/processed/meta_Grocery_and_Gourmet_Food_embeddings.npz
+2025-12-28 20:32:12,883 - INFO - Building adjacency matrix...
+2025-12-28 20:32:12,986 - INFO - Adjacency matrix built: torch.Size([38548, 38548])
+2025-12-28 20:32:12,986 - INFO - Creating model...
+2025-12-28 20:32:13,194 - INFO - Creating datasets...
+2025-12-28 20:32:13,645 - INFO - Creating runner...
+2025-12-28 20:32:13,645 - INFO - Starting training...
+2025-12-28 20:32:13,645 - INFO - Test Before Training: ({})
+2025-12-28 20:32:13,646 - ERROR - Error occurred: 'NoneType' object has no attribute 'format'
+Traceback (most recent call last):
+  File "run_rechorus.py", line 155, in main
+    runner.train(data_dict)
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNRunner.py", line 48, in train
+    logging.info("Test Before Training: ({})").format(
+AttributeError: 'NoneType' object has no attribute 'format'
+2025-12-28 20:33:20,673 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:33:20,673 - INFO - Device: cuda:0
+2025-12-28 20:33:20,673 - INFO - Model mode: concat
+2025-12-28 20:33:20,673 - INFO - Loading data...
+2025-12-28 20:33:20,673 - INFO - Reading SComGNN data from "./data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:33:21,167 - INFO - "# user": 38548, "# item": 38548
+2025-12-28 20:33:21,440 - INFO - Loaded category embeddings from ./data_preprocess/processed/meta_Grocery_and_Gourmet_Food_embeddings.npz
+2025-12-28 20:33:21,443 - INFO - Building adjacency matrix...
+2025-12-28 20:33:21,544 - INFO - Adjacency matrix built: torch.Size([38548, 38548])
+2025-12-28 20:33:21,545 - INFO - Creating model...
+2025-12-28 20:33:21,763 - INFO - Creating datasets...
+2025-12-28 20:33:22,214 - INFO - Creating runner...
+2025-12-28 20:33:22,214 - INFO - Starting training...
+2025-12-28 20:33:22,331 - INFO - Optimizer: Adam
+2025-12-28 20:34:48,819 - ERROR - Error occurred: [enforce fail at inline_container.cc:642] . invalid file name: ../model/
+Traceback (most recent call last):
+  File "run_rechorus.py", line 155, in main
+    runner.train(data_dict)
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNRunner.py", line 76, in train
+    model.save_model()
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\models\BaseModel.py", line 79, in save_model
+    torch.save(self.state_dict(), model_path)
+  File "D:\down\lib\site-packages\torch\serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "D:\down\lib\site-packages\torch\serialization.py", line 525, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "D:\down\lib\site-packages\torch\serialization.py", line 496, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+RuntimeError: [enforce fail at inline_container.cc:642] . invalid file name: ../model/
+2025-12-28 20:35:25,096 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:35:25,096 - INFO - Device: cuda:0
+2025-12-28 20:35:25,096 - INFO - Model mode: concat
+2025-12-28 20:35:25,096 - INFO - Loading data...
+2025-12-28 20:35:25,097 - INFO - Reading SComGNN data from "data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:35:25,609 - INFO - "# user": 38548, "# item": 38548
+2025-12-28 20:35:25,878 - INFO - Loaded category embeddings from data_preprocess/processed/meta_Grocery_and_Gourmet_Food_embeddings.npz
+2025-12-28 20:35:25,881 - INFO - Building adjacency matrix...
+2025-12-28 20:35:25,986 - INFO - Adjacency matrix built: torch.Size([38548, 38548])
+2025-12-28 20:35:25,986 - INFO - Creating model...
+2025-12-28 20:35:26,192 - INFO - Creating datasets...
+2025-12-28 20:35:26,649 - INFO - Creating runner...
+2025-12-28 20:35:26,650 - INFO - Starting training...
+2025-12-28 20:35:26,771 - INFO - Optimizer: Adam
+2025-12-28 20:36:47,338 - ERROR - Error occurred: [enforce fail at inline_container.cc:642] . invalid file name: ./model/
+Traceback (most recent call last):
+  File "run_rechorus.py", line 155, in main
+    runner.train(data_dict)
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\helpers\SComGNNRunner.py", line 76, in train
+    model.save_model()
+  File "C:\Users\30557\Desktop\ReChorus-master_0\ReChorus-master\src\models\BaseModel.py", line 79, in save_model
+    torch.save(self.state_dict(), model_path)
+  File "D:\down\lib\site-packages\torch\serialization.py", line 651, in save
+    with _open_zipfile_writer(f) as opened_zipfile:
+  File "D:\down\lib\site-packages\torch\serialization.py", line 525, in _open_zipfile_writer
+    return container(name_or_buffer)
+  File "D:\down\lib\site-packages\torch\serialization.py", line 496, in __init__
+    super().__init__(torch._C.PyTorchFileWriter(self.name))
+RuntimeError: [enforce fail at inline_container.cc:642] . invalid file name: ./model/
+2025-12-28 20:37:00,597 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-28 20:37:00,597 - INFO - Device: cuda:0
+2025-12-28 20:37:00,597 - INFO - Model mode: concat
+2025-12-28 20:37:00,598 - INFO - Loading data...
+2025-12-28 20:37:00,598 - INFO - Reading SComGNN data from "data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-28 20:37:01,102 - INFO - "# user": 38548, "# item": 38548
+2025-12-28 20:37:01,380 - INFO - Loaded category embeddings from data_preprocess/processed/meta_Grocery_and_Gourmet_Food_embeddings.npz
+2025-12-28 20:37:01,381 - INFO - Building adjacency matrix...
+2025-12-28 20:37:01,490 - INFO - Adjacency matrix built: torch.Size([38548, 38548])
+2025-12-28 20:37:01,491 - INFO - Creating model...
+2025-12-28 20:37:01,692 - INFO - Creating datasets...
+2025-12-28 20:37:02,152 - INFO - Creating runner...
+2025-12-28 20:37:02,152 - INFO - Starting training...
+2025-12-28 20:37:02,273 - INFO - Optimizer: Adam
+2025-12-28 20:38:31,616 - INFO - Epoch 1     loss=0.4349 [68.2 s] dev=(HR@5:0.5315,NDCG@5:0.3501,HR@10:0.7434,NDCG@10:0.4187) [21.2 s] *
+2025-12-28 20:39:55,392 - INFO - Epoch 2     loss=0.3344 [64.4 s] dev=(HR@5:0.6330,NDCG@5:0.4416,HR@10:0.8121,NDCG@10:0.4997) [19.4 s] *
+2025-12-28 20:41:19,796 - INFO - Epoch 3     loss=0.3098 [64.9 s] dev=(HR@5:0.6618,NDCG@5:0.4719,HR@10:0.8248,NDCG@10:0.5247) [19.5 s] *
+2025-12-28 20:42:47,669 - INFO - Epoch 4     loss=0.2970 [65.8 s] dev=(HR@5:0.6802,NDCG@5:0.4911,HR@10:0.8322,NDCG@10:0.5404) [22.0 s] *
+2025-12-28 20:44:12,880 - INFO - Epoch 5     loss=0.2849 [64.4 s] dev=(HR@5:0.6960,NDCG@5:0.5098,HR@10:0.8431,NDCG@10:0.5575) [20.8 s] *
+2025-12-28 20:45:38,496 - INFO - Epoch 6     loss=0.2757 [66.6 s] dev=(HR@5:0.7063,NDCG@5:0.5223,HR@10:0.8479,NDCG@10:0.5681) [19.0 s] *
+2025-12-28 20:47:04,072 - INFO - Epoch 7     loss=0.2696 [65.4 s] dev=(HR@5:0.7120,NDCG@5:0.5285,HR@10:0.8497,NDCG@10:0.5732) [20.2 s] *
+2025-12-28 20:48:37,494 - INFO - Epoch 8     loss=0.2651 [68.0 s] dev=(HR@5:0.7158,NDCG@5:0.5312,HR@10:0.8502,NDCG@10:0.5749) [25.4 s] *
+2025-12-28 20:50:03,767 - INFO - Epoch 9     loss=0.2616 [65.3 s] dev=(HR@5:0.7209,NDCG@5:0.5381,HR@10:0.8535,NDCG@10:0.5811) [20.9 s] *
+2025-12-28 20:51:30,314 - INFO - Epoch 10    loss=0.2593 [65.5 s] dev=(HR@5:0.7243,NDCG@5:0.5422,HR@10:0.8547,NDCG@10:0.5845) [21.0 s] *
+2025-12-28 20:52:53,478 - INFO - Epoch 11    loss=0.2575 [63.1 s] dev=(HR@5:0.7256,NDCG@5:0.5439,HR@10:0.8566,NDCG@10:0.5863) [20.1 s] *
+2025-12-28 20:54:16,768 - INFO - Epoch 12    loss=0.2555 [63.7 s] dev=(HR@5:0.7255,NDCG@5:0.5475,HR@10:0.8564,NDCG@10:0.5899) [19.6 s] *
+2025-12-28 20:55:42,740 - INFO - Epoch 13    loss=0.2545 [65.6 s] dev=(HR@5:0.7276,NDCG@5:0.5490,HR@10:0.8566,NDCG@10:0.5909) [20.4 s] *
+2025-12-28 20:57:06,542 - INFO - Epoch 14    loss=0.2539 [63.5 s] dev=(HR@5:0.7272,NDCG@5:0.5491,HR@10:0.8552,NDCG@10:0.5906) [20.3 s]
+2025-12-28 20:58:25,594 - INFO - Epoch 15    loss=0.2529 [61.3 s] dev=(HR@5:0.7248,NDCG@5:0.5472,HR@10:0.8535,NDCG@10:0.5889) [17.8 s]
+2025-12-28 20:59:47,196 - INFO - Epoch 16    loss=0.2522 [63.1 s] dev=(HR@5:0.7287,NDCG@5:0.5518,HR@10:0.8565,NDCG@10:0.5932) [18.5 s] *
+2025-12-28 21:01:14,370 - INFO - Epoch 17    loss=0.2515 [65.8 s] dev=(HR@5:0.7327,NDCG@5:0.5546,HR@10:0.8624,NDCG@10:0.5967) [21.4 s] *
+2025-12-28 21:02:36,910 - INFO - Epoch 18    loss=0.2507 [63.6 s] dev=(HR@5:0.7327,NDCG@5:0.5538,HR@10:0.8590,NDCG@10:0.5948) [18.9 s]
+2025-12-28 21:03:58,021 - INFO - Epoch 19    loss=0.2502 [62.6 s] dev=(HR@5:0.7292,NDCG@5:0.5529,HR@10:0.8563,NDCG@10:0.5941) [18.5 s]
+2025-12-28 21:05:19,940 - INFO - Epoch 20    loss=0.2494 [62.5 s] dev=(HR@5:0.7336,NDCG@5:0.5556,HR@10:0.8600,NDCG@10:0.5967) [19.5 s]
+2025-12-28 21:06:42,943 - INFO - Epoch 21    loss=0.2491 [63.8 s] dev=(HR@5:0.7326,NDCG@5:0.5535,HR@10:0.8598,NDCG@10:0.5948) [19.2 s]
+2025-12-28 21:08:05,992 - INFO - Epoch 22    loss=0.2489 [63.9 s] dev=(HR@5:0.7322,NDCG@5:0.5542,HR@10:0.8607,NDCG@10:0.5959) [19.1 s]
+2025-12-28 21:09:32,892 - INFO - Epoch 23    loss=0.2482 [66.9 s] dev=(HR@5:0.7292,NDCG@5:0.5526,HR@10:0.8564,NDCG@10:0.5939) [20.0 s]
+2025-12-28 21:10:56,011 - INFO - Epoch 24    loss=0.2482 [63.2 s] dev=(HR@5:0.7324,NDCG@5:0.5551,HR@10:0.8573,NDCG@10:0.5956) [20.0 s]
+2025-12-28 21:12:20,234 - INFO - Epoch 25    loss=0.2476 [65.5 s] dev=(HR@5:0.7330,NDCG@5:0.5570,HR@10:0.8583,NDCG@10:0.5977) [18.7 s] *
+2025-12-28 21:13:40,802 - INFO - Epoch 26    loss=0.2479 [62.5 s] dev=(HR@5:0.7303,NDCG@5:0.5541,HR@10:0.8553,NDCG@10:0.5946) [18.1 s]
+2025-12-28 21:15:07,691 - INFO - Epoch 27    loss=0.2463 [66.3 s] dev=(HR@5:0.7335,NDCG@5:0.5566,HR@10:0.8618,NDCG@10:0.5982) [20.5 s] *
+2025-12-28 21:16:31,763 - INFO - Epoch 28    loss=0.2471 [63.5 s] dev=(HR@5:0.7271,NDCG@5:0.5522,HR@10:0.8550,NDCG@10:0.5938) [20.5 s]
+2025-12-28 21:17:52,894 - INFO - Epoch 29    loss=0.2471 [62.3 s] dev=(HR@5:0.7341,NDCG@5:0.5573,HR@10:0.8590,NDCG@10:0.5979) [18.8 s]
+2025-12-28 21:19:21,123 - INFO - Epoch 30    loss=0.2469 [65.2 s] dev=(HR@5:0.7345,NDCG@5:0.5581,HR@10:0.8600,NDCG@10:0.5988) [23.0 s] *
+2025-12-28 21:20:43,634 - INFO - Epoch 31    loss=0.2465 [62.8 s] dev=(HR@5:0.7335,NDCG@5:0.5572,HR@10:0.8597,NDCG@10:0.5981) [19.7 s]
+2025-12-28 21:22:06,891 - INFO - Epoch 32    loss=0.2461 [63.4 s] dev=(HR@5:0.7353,NDCG@5:0.5585,HR@10:0.8603,NDCG@10:0.5991) [19.9 s] *
+2025-12-28 21:23:30,634 - INFO - Epoch 33    loss=0.2462 [64.3 s] dev=(HR@5:0.7362,NDCG@5:0.5604,HR@10:0.8609,NDCG@10:0.6010) [19.4 s] *
+2025-12-28 21:24:56,334 - INFO - Epoch 34    loss=0.2458 [64.9 s] dev=(HR@5:0.7347,NDCG@5:0.5600,HR@10:0.8606,NDCG@10:0.6008) [20.8 s]
+2025-12-28 21:26:20,315 - INFO - Epoch 35    loss=0.2460 [63.7 s] dev=(HR@5:0.7341,NDCG@5:0.5589,HR@10:0.8576,NDCG@10:0.5990) [20.3 s]
+2025-12-28 21:27:43,772 - INFO - Epoch 36    loss=0.2460 [62.6 s] dev=(HR@5:0.7364,NDCG@5:0.5611,HR@10:0.8611,NDCG@10:0.6016) [20.8 s] *
+2025-12-28 21:29:07,105 - INFO - Epoch 37    loss=0.2461 [64.3 s] dev=(HR@5:0.7325,NDCG@5:0.5591,HR@10:0.8590,NDCG@10:0.6000) [19.0 s]
+2025-12-28 21:30:28,901 - INFO - Epoch 38    loss=0.2461 [63.4 s] dev=(HR@5:0.7337,NDCG@5:0.5580,HR@10:0.8586,NDCG@10:0.5985) [18.4 s]
+2025-12-28 21:31:49,675 - INFO - Epoch 39    loss=0.2456 [63.1 s] dev=(HR@5:0.7365,NDCG@5:0.5602,HR@10:0.8588,NDCG@10:0.5999) [17.7 s]
+2025-12-28 21:33:10,647 - INFO - Epoch 40    loss=0.2452 [61.7 s] dev=(HR@5:0.7363,NDCG@5:0.5608,HR@10:0.8616,NDCG@10:0.6014) [19.3 s]
+2025-12-28 21:34:32,892 - INFO - Epoch 41    loss=0.2445 [63.3 s] dev=(HR@5:0.7379,NDCG@5:0.5618,HR@10:0.8612,NDCG@10:0.6019) [18.9 s] *
+2025-12-28 21:35:57,113 - INFO - Epoch 42    loss=0.2457 [64.2 s] dev=(HR@5:0.7379,NDCG@5:0.5612,HR@10:0.8628,NDCG@10:0.6018) [20.0 s]
+2025-12-28 21:37:21,892 - INFO - Epoch 43    loss=0.2448 [65.7 s] dev=(HR@5:0.7370,NDCG@5:0.5618,HR@10:0.8590,NDCG@10:0.6015) [19.1 s]
+2025-12-28 21:38:47,228 - INFO - Epoch 44    loss=0.2449 [65.3 s] dev=(HR@5:0.7370,NDCG@5:0.5615,HR@10:0.8606,NDCG@10:0.6017) [20.0 s]
+2025-12-28 21:40:07,418 - INFO - Epoch 45    loss=0.2450 [62.4 s] dev=(HR@5:0.7361,NDCG@5:0.5625,HR@10:0.8606,NDCG@10:0.6029) [17.8 s] *
+2025-12-28 21:41:26,351 - INFO - Epoch 46    loss=0.2448 [61.2 s] dev=(HR@5:0.7379,NDCG@5:0.5627,HR@10:0.8608,NDCG@10:0.6026) [17.7 s]
+2025-12-28 21:42:45,016 - INFO - Epoch 47    loss=0.2447 [61.0 s] dev=(HR@5:0.7389,NDCG@5:0.5619,HR@10:0.8629,NDCG@10:0.6023) [17.7 s]
+2025-12-29 07:46:11,957 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-29 07:46:11,958 - INFO - Device: cuda:0
+2025-12-29 07:46:11,958 - INFO - Model mode: concat
+2025-12-29 07:46:11,958 - INFO - Loading data...
+2025-12-29 07:46:11,958 - INFO - Reading SComGNN data from "data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-29 07:46:12,502 - INFO - "# user": 38548, "# item": 38548
+2025-12-29 07:46:12,791 - INFO - Loaded category embeddings from data_preprocess/processed/meta_Grocery_and_Gourmet_Food_embeddings.npz
+2025-12-29 07:46:12,794 - INFO - Building adjacency matrix...
+2025-12-29 07:46:12,899 - INFO - Adjacency matrix built: torch.Size([38548, 38548])
+2025-12-29 07:46:12,900 - INFO - Creating model...
+2025-12-29 07:46:13,155 - INFO - Creating datasets...
+2025-12-29 07:46:13,595 - INFO - Creating runner...
+2025-12-29 07:46:13,595 - INFO - Starting training...
+2025-12-29 07:46:13,729 - INFO - Optimizer: Adam
+2025-12-29 07:47:29,951 - INFO - Epoch 1     loss=0.4419 [60.4 s] dev=(HR@5:0.5371,NDCG@5:0.3553,HR@10:0.7470,NDCG@10:0.4231) [16.0 s] *
+2025-12-29 07:48:43,136 - INFO - Epoch 2     loss=0.3413 [57.2 s] dev=(HR@5:0.6043,NDCG@5:0.4155,HR@10:0.7955,NDCG@10:0.4774) [16.0 s] *
+2025-12-29 07:49:56,556 - INFO - Epoch 3     loss=0.3235 [57.5 s] dev=(HR@5:0.6271,NDCG@5:0.4369,HR@10:0.8049,NDCG@10:0.4945) [15.9 s] *
+2025-12-29 07:51:09,457 - INFO - Epoch 4     loss=0.3148 [57.0 s] dev=(HR@5:0.6401,NDCG@5:0.4521,HR@10:0.8081,NDCG@10:0.5067) [15.9 s] *
+2025-12-29 07:52:24,956 - INFO - Epoch 5     loss=0.3095 [57.5 s] dev=(HR@5:0.6473,NDCG@5:0.4605,HR@10:0.8138,NDCG@10:0.5145) [17.9 s] *
+2025-12-29 07:53:57,737 - INFO - Epoch 6     loss=0.3058 [76.5 s] dev=(HR@5:0.6481,NDCG@5:0.4627,HR@10:0.8097,NDCG@10:0.5151) [16.3 s] *
+2025-12-29 07:55:11,437 - INFO - Epoch 7     loss=0.3026 [57.4 s] dev=(HR@5:0.6520,NDCG@5:0.4687,HR@10:0.8128,NDCG@10:0.5209) [16.3 s] *
+2025-12-29 07:56:25,113 - INFO - Epoch 8     loss=0.3006 [57.7 s] dev=(HR@5:0.6494,NDCG@5:0.4648,HR@10:0.8104,NDCG@10:0.5169) [16.0 s]
+2025-12-29 07:57:39,677 - INFO - Epoch 9     loss=0.2984 [58.2 s] dev=(HR@5:0.6544,NDCG@5:0.4709,HR@10:0.8138,NDCG@10:0.5225) [16.4 s] *
+2025-12-29 07:58:53,572 - INFO - Epoch 10    loss=0.2976 [57.8 s] dev=(HR@5:0.6592,NDCG@5:0.4751,HR@10:0.8149,NDCG@10:0.5256) [16.1 s] *
+2025-12-29 08:00:08,939 - INFO - Epoch 11    loss=0.2964 [58.4 s] dev=(HR@5:0.6559,NDCG@5:0.4739,HR@10:0.8155,NDCG@10:0.5257) [16.9 s] *
+2025-12-29 08:01:23,669 - INFO - Epoch 12    loss=0.2948 [58.5 s] dev=(HR@5:0.6593,NDCG@5:0.4773,HR@10:0.8149,NDCG@10:0.5279) [16.3 s] *
+2025-12-29 08:02:37,567 - INFO - Epoch 13    loss=0.2948 [57.7 s] dev=(HR@5:0.6575,NDCG@5:0.4779,HR@10:0.8145,NDCG@10:0.5289) [16.2 s] *
+2025-12-29 08:03:51,030 - INFO - Epoch 14    loss=0.2942 [57.1 s] dev=(HR@5:0.6563,NDCG@5:0.4779,HR@10:0.8131,NDCG@10:0.5288) [16.3 s]
+2025-12-29 08:05:04,858 - INFO - Epoch 15    loss=0.2935 [57.4 s] dev=(HR@5:0.6567,NDCG@5:0.4769,HR@10:0.8126,NDCG@10:0.5273) [16.4 s]
+2025-12-29 08:06:18,993 - INFO - Epoch 16    loss=0.2930 [57.8 s] dev=(HR@5:0.6593,NDCG@5:0.4776,HR@10:0.8137,NDCG@10:0.5278) [16.4 s]
+2025-12-29 08:07:32,216 - INFO - Epoch 17    loss=0.2926 [56.9 s] dev=(HR@5:0.6613,NDCG@5:0.4797,HR@10:0.8163,NDCG@10:0.5300) [16.3 s] *
+2025-12-29 08:08:45,280 - INFO - Epoch 18    loss=0.2919 [56.8 s] dev=(HR@5:0.6632,NDCG@5:0.4795,HR@10:0.8176,NDCG@10:0.5295) [16.2 s]
+2025-12-29 08:09:59,177 - INFO - Epoch 19    loss=0.2917 [57.4 s] dev=(HR@5:0.6619,NDCG@5:0.4807,HR@10:0.8154,NDCG@10:0.5305) [16.4 s] *
+2025-12-29 08:11:12,906 - INFO - Epoch 20    loss=0.2911 [57.3 s] dev=(HR@5:0.6618,NDCG@5:0.4791,HR@10:0.8174,NDCG@10:0.5295) [16.4 s]
+2025-12-29 08:12:27,229 - INFO - Epoch 21    loss=0.2908 [57.6 s] dev=(HR@5:0.6615,NDCG@5:0.4808,HR@10:0.8177,NDCG@10:0.5315) [16.7 s] *
+2025-12-29 08:13:41,828 - INFO - Epoch 22    loss=0.2906 [58.3 s] dev=(HR@5:0.6595,NDCG@5:0.4790,HR@10:0.8166,NDCG@10:0.5300) [16.3 s]
+2025-12-29 08:14:56,943 - INFO - Epoch 23    loss=0.2900 [58.7 s] dev=(HR@5:0.6600,NDCG@5:0.4796,HR@10:0.8148,NDCG@10:0.5298) [16.5 s]
+2025-12-29 08:16:11,241 - INFO - Epoch 24    loss=0.2902 [57.7 s] dev=(HR@5:0.6626,NDCG@5:0.4814,HR@10:0.8158,NDCG@10:0.5312) [16.6 s]
+2025-12-29 08:17:26,005 - INFO - Epoch 25    loss=0.2895 [58.4 s] dev=(HR@5:0.6659,NDCG@5:0.4845,HR@10:0.8169,NDCG@10:0.5334) [16.3 s] *
+2025-12-29 08:18:40,123 - INFO - Epoch 26    loss=0.2898 [57.7 s] dev=(HR@5:0.6632,NDCG@5:0.4833,HR@10:0.8164,NDCG@10:0.5330) [16.4 s]
+2025-12-29 08:19:54,570 - INFO - Epoch 27    loss=0.2885 [58.0 s] dev=(HR@5:0.6628,NDCG@5:0.4813,HR@10:0.8155,NDCG@10:0.5309) [16.4 s]
+2025-12-29 08:21:08,992 - INFO - Epoch 28    loss=0.2893 [58.0 s] dev=(HR@5:0.6617,NDCG@5:0.4830,HR@10:0.8150,NDCG@10:0.5327) [16.4 s]
+2025-12-29 08:22:23,437 - INFO - Epoch 29    loss=0.2892 [58.2 s] dev=(HR@5:0.6649,NDCG@5:0.4841,HR@10:0.8198,NDCG@10:0.5344) [16.3 s] *
+2025-12-29 08:23:37,915 - INFO - Epoch 30    loss=0.2892 [58.1 s] dev=(HR@5:0.6624,NDCG@5:0.4825,HR@10:0.8165,NDCG@10:0.5325) [16.4 s]
+2025-12-29 08:24:51,751 - INFO - Epoch 31    loss=0.2886 [57.5 s] dev=(HR@5:0.6626,NDCG@5:0.4832,HR@10:0.8169,NDCG@10:0.5332) [16.3 s]
+2025-12-29 08:26:06,223 - INFO - Epoch 32    loss=0.2883 [58.1 s] dev=(HR@5:0.6647,NDCG@5:0.4838,HR@10:0.8199,NDCG@10:0.5342) [16.4 s]
+2025-12-29 08:27:20,566 - INFO - Epoch 33    loss=0.2884 [57.9 s] dev=(HR@5:0.6664,NDCG@5:0.4853,HR@10:0.8188,NDCG@10:0.5347) [16.4 s] *
+2025-12-29 08:28:34,594 - INFO - Epoch 34    loss=0.2881 [57.8 s] dev=(HR@5:0.6661,NDCG@5:0.4864,HR@10:0.8180,NDCG@10:0.5357) [16.3 s] *
+2025-12-29 08:29:49,196 - INFO - Epoch 35    loss=0.2884 [58.2 s] dev=(HR@5:0.6617,NDCG@5:0.4818,HR@10:0.8136,NDCG@10:0.5311) [16.4 s]
+2025-12-29 08:31:03,591 - INFO - Epoch 36    loss=0.2882 [57.9 s] dev=(HR@5:0.6663,NDCG@5:0.4857,HR@10:0.8199,NDCG@10:0.5356) [16.5 s]
+2025-12-29 08:32:18,109 - INFO - Epoch 37    loss=0.2882 [58.2 s] dev=(HR@5:0.6649,NDCG@5:0.4855,HR@10:0.8168,NDCG@10:0.5348) [16.4 s]
+2025-12-29 08:33:33,239 - INFO - Epoch 38    loss=0.2883 [58.8 s] dev=(HR@5:0.6628,NDCG@5:0.4841,HR@10:0.8163,NDCG@10:0.5340) [16.4 s]
+2025-12-29 08:34:48,421 - INFO - Epoch 39    loss=0.2876 [58.8 s] dev=(HR@5:0.6669,NDCG@5:0.4864,HR@10:0.8168,NDCG@10:0.5351) [16.4 s]
+2025-12-29 08:36:02,772 - INFO - Epoch 40    loss=0.2872 [58.0 s] dev=(HR@5:0.6682,NDCG@5:0.4873,HR@10:0.8204,NDCG@10:0.5367) [16.3 s] *
+2025-12-29 08:37:17,139 - INFO - Epoch 41    loss=0.2865 [58.1 s] dev=(HR@5:0.6684,NDCG@5:0.4880,HR@10:0.8184,NDCG@10:0.5366) [16.3 s]
+2025-12-29 08:38:32,050 - INFO - Epoch 42    loss=0.2876 [58.5 s] dev=(HR@5:0.6649,NDCG@5:0.4863,HR@10:0.8155,NDCG@10:0.5351) [16.4 s]
+2025-12-29 08:39:46,625 - INFO - Epoch 43    loss=0.2871 [58.2 s] dev=(HR@5:0.6661,NDCG@5:0.4863,HR@10:0.8161,NDCG@10:0.5349) [16.3 s]
+2025-12-29 08:41:01,930 - INFO - Epoch 44    loss=0.2869 [58.9 s] dev=(HR@5:0.6706,NDCG@5:0.4897,HR@10:0.8208,NDCG@10:0.5383) [16.4 s] *
+2025-12-29 08:42:16,581 - INFO - Epoch 45    loss=0.2869 [58.3 s] dev=(HR@5:0.6665,NDCG@5:0.4884,HR@10:0.8160,NDCG@10:0.5370) [16.4 s]
+2025-12-29 08:43:30,800 - INFO - Epoch 46    loss=0.2869 [57.9 s] dev=(HR@5:0.6689,NDCG@5:0.4875,HR@10:0.8204,NDCG@10:0.5367) [16.3 s]
+2025-12-29 08:44:44,859 - INFO - Epoch 47    loss=0.2864 [57.6 s] dev=(HR@5:0.6703,NDCG@5:0.4886,HR@10:0.8218,NDCG@10:0.5377) [16.4 s]
+2025-12-29 08:46:00,098 - INFO - Epoch 48    loss=0.2869 [58.6 s] dev=(HR@5:0.6711,NDCG@5:0.4882,HR@10:0.8235,NDCG@10:0.5376) [16.7 s]
+2025-12-29 08:47:14,468 - INFO - Epoch 49    loss=0.2866 [57.9 s] dev=(HR@5:0.6670,NDCG@5:0.4878,HR@10:0.8183,NDCG@10:0.5369) [16.4 s]
+2025-12-29 08:48:28,896 - INFO - Epoch 50    loss=0.2863 [58.2 s] dev=(HR@5:0.6681,NDCG@5:0.4884,HR@10:0.8198,NDCG@10:0.5377) [16.2 s]
+2025-12-29 08:49:43,912 - INFO - Epoch 51    loss=0.2864 [58.5 s] dev=(HR@5:0.6676,NDCG@5:0.4887,HR@10:0.8195,NDCG@10:0.5380) [16.5 s]
+2025-12-29 08:50:59,325 - INFO - Epoch 52    loss=0.2862 [59.0 s] dev=(HR@5:0.6689,NDCG@5:0.4895,HR@10:0.8218,NDCG@10:0.5391) [16.4 s] *
+2025-12-29 08:52:14,022 - INFO - Epoch 53    loss=0.2857 [58.4 s] dev=(HR@5:0.6693,NDCG@5:0.4882,HR@10:0.8214,NDCG@10:0.5375) [16.3 s]
+2025-12-29 08:53:28,824 - INFO - Epoch 54    loss=0.2860 [58.5 s] dev=(HR@5:0.6692,NDCG@5:0.4891,HR@10:0.8233,NDCG@10:0.5391) [16.3 s] *
+2025-12-29 08:54:43,934 - INFO - Epoch 55    loss=0.2856 [58.8 s] dev=(HR@5:0.6686,NDCG@5:0.4893,HR@10:0.8197,NDCG@10:0.5384) [16.3 s]
+2025-12-29 08:55:58,644 - INFO - Epoch 56    loss=0.2860 [58.4 s] dev=(HR@5:0.6703,NDCG@5:0.4893,HR@10:0.8224,NDCG@10:0.5385) [16.3 s]
+2025-12-29 08:57:13,062 - INFO - Epoch 57    loss=0.2863 [58.0 s] dev=(HR@5:0.6636,NDCG@5:0.4852,HR@10:0.8178,NDCG@10:0.5353) [16.4 s]
+2025-12-29 08:58:27,834 - INFO - Epoch 58    loss=0.2862 [58.6 s] dev=(HR@5:0.6693,NDCG@5:0.4889,HR@10:0.8223,NDCG@10:0.5386) [16.2 s]
+2025-12-29 08:59:42,261 - INFO - Epoch 59    loss=0.2856 [58.2 s] dev=(HR@5:0.6676,NDCG@5:0.4868,HR@10:0.8192,NDCG@10:0.5359) [16.3 s]
+2025-12-29 09:00:56,262 - INFO - Epoch 60    loss=0.2860 [57.7 s] dev=(HR@5:0.6718,NDCG@5:0.4901,HR@10:0.8219,NDCG@10:0.5388) [16.3 s]
+2025-12-29 09:02:10,829 - INFO - Epoch 61    loss=0.2859 [58.2 s] dev=(HR@5:0.6652,NDCG@5:0.4868,HR@10:0.8150,NDCG@10:0.5354) [16.4 s]
+2025-12-29 09:03:25,126 - INFO - Epoch 62    loss=0.2856 [58.0 s] dev=(HR@5:0.6694,NDCG@5:0.4888,HR@10:0.8196,NDCG@10:0.5376) [16.3 s]
+2025-12-29 09:04:39,812 - INFO - Epoch 63    loss=0.2854 [58.4 s] dev=(HR@5:0.6693,NDCG@5:0.4895,HR@10:0.8210,NDCG@10:0.5388) [16.3 s]
+2025-12-29 09:05:54,203 - INFO - Epoch 64    loss=0.2856 [58.2 s] dev=(HR@5:0.6691,NDCG@5:0.4886,HR@10:0.8220,NDCG@10:0.5382) [16.2 s]
+2025-12-29 09:05:54,204 - INFO - Early stopping at epoch 64
+2025-12-29 09:05:54,222 - INFO - Load model from model/SComGNN_meta_Grocery_and_Gourmet_Food_concat.pt
+2025-12-29 09:05:54,222 - INFO - 
+Best Iter(dev)=54   	 dev=(HR@5:0.6692,NDCG@5:0.4891,HR@10:0.8233,NDCG@10:0.5391)
+2025-12-29 09:05:54,223 - INFO - Training completed.
+2025-12-29 13:09:58,804 - INFO - Running SComGNN on dataset: meta_Grocery_and_Gourmet_Food
+2025-12-29 13:09:58,805 - INFO - Device: cuda:0
+2025-12-29 13:09:58,805 - INFO - Model mode: concat
+2025-12-29 13:09:58,805 - INFO - Loading data...
+2025-12-29 13:09:58,805 - INFO - Reading SComGNN data from "data_preprocess/processed/", dataset = "meta_Grocery_and_Gourmet_Food"
+2025-12-29 13:09:59,310 - INFO - "# user": 38548, "# item": 38548
+2025-12-29 13:09:59,585 - INFO - Loaded category embeddings from data_preprocess/processed/meta_Grocery_and_Gourmet_Food_embeddings.npz
+2025-12-29 13:09:59,588 - INFO - Building adjacency matrix...
+2025-12-29 13:09:59,694 - INFO - Adjacency matrix built: torch.Size([38548, 38548])
+2025-12-29 13:09:59,695 - INFO - Creating model...
+2025-12-29 13:09:59,948 - INFO - Creating datasets...
+2025-12-29 13:10:00,377 - INFO - Creating runner...
+2025-12-29 13:10:00,377 - INFO - Starting training...
+2025-12-29 13:10:00,497 - INFO - Optimizer: Adam
+2025-12-29 13:11:17,882 - INFO - Epoch 1     loss=0.4420 [60.6 s] dev=(HR@5:0.5328,NDCG@5:0.3528,HR@10:0.7414,NDCG@10:0.4203) [16.9 s] *
+2025-12-29 13:11:45,369 - INFO - Early stop manually
+2025-12-29 13:11:47,487 - INFO - 
+--------------------------------------------- END: 2025-12-29 13:11:47 ---------------------------------------------
